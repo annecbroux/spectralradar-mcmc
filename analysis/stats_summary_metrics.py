@@ -9,8 +9,8 @@ from summary_tools import compute_hist
 
 # Set the directories
 
-base_directory = '/home/billault/mcmc/chains/'
-metrics_dir = '/home/billault/mcmc/metrics_after_burnin/'
+base_directory = '/home/billault/mcmc/chains_spectra_pt/'
+metrics_dir = '/home/billault/mcmc/metrics/'
 
 # Configs on which to compute the metrics 
 config_dict = {
