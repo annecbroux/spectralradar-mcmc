@@ -1,0 +1,64 @@
+{
+    "n_chains":10,
+    "n_spec": 21,
+    "outdir_root": "./chains_spectra_bimodal_pt/mcmc_chains_spectra_bimodal_edr1e-4_pt_5lev/",
+
+    "data_params": "./data/params_from_dataset_bimodal_12spec.feather",
+    "data_measurements": "./data/target_bimodal_edr1e-4.feather",
+    "original_dataset": "./data/bimodal_original_dataset.feather",
+
+    "order_params": {
+        "logM0":0,
+        "logDeff":1,
+        "mu":2,
+        "loga_mass_size":3,
+        "b_mass_size":4,
+        "logalpha_area_size":5,
+        "beta_area_size":6,
+        "logM0_2":7,
+        "logDeff_2":8,
+        "mu_2":9,
+        "loga_mass_size_2":10,
+        "b_mass_size_2":11,
+        "logalpha_area_size_2":12,
+        "beta_area_size_2":13
+    },
+
+    "n_acc": 100000,
+    "n_spec_start":0,
+    "n_spec_end": 12,
+    "n_steps": 100000,
+    "burnin": 10000,
+    "h_memory": 100,
+    "peak_loss":0,
+    "discard_noise":1,
+    "linear":0,
+    "parallel":0,
+
+    "pCN":0,
+    "beta":-1,
+    "coef_sigma_pcn":1,
+    "uniform_prior":0,
+    "cov":1,
+    "n_acc_for_ap":20,
+    "ap_cov":1,
+    "ap_cov_mixture":0,
+    "n_pt":5,
+
+    "turb_edr": 1e-4,
+    "measurement_keys": ["spectra_X","spectra_Ka","spectra_W"],
+
+    "sigma_meas": {"spectra_X":0.35, "spectra_Ka":0.35, "spectra_W":0.35},
+    "swap": 1,
+    "update": 1,
+
+    "freeze_params_to_true": [],
+
+    "freeze_params": {},
+
+    "plot": 1,
+    "print_res": 0,
+    "mse_thres": 0.1
+
+    
+}

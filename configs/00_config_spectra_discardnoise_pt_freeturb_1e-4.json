@@ -1,0 +1,51 @@
+{
+    "n_chains":20,
+    "outdir_root": "/home/billault/mcmc/chains_spectra_pt/mcmc_chains_spectra_edr1e-4_freeturb/",
+
+    "data_params": "./data/params_from_dataset_10spec.feather",
+    "data_measurements": "./data/target_edr1e-4_10spec.feather",
+    "original_dataset": "./data/original_dataset.feather",
+
+    "order_params": {
+        "logM0":0,
+        "logDeff":1,
+        "mu":2,
+        "loga_mass_size":3,
+        "b_mass_size":4,
+        "logalpha_area_size":5,
+        "beta_area_size":6,
+        "logedr":7
+    },
+
+    "n_acc": 100000,
+    "n_spec_start":0,
+    "n_spec_end": 10,
+    "n_steps": 100000,
+    "burnin": 10000,
+    "h_memory": 100,
+    "discard_noise":1,
+
+    "cov":1,
+    "n_acc_for_ap":20,
+    "ap_cov":1,
+    "ap_cov_mixture":0,
+    "n_pt":1,
+
+    "turb_edr": -1,
+    "measurement_keys": ["spectra_X","spectra_Ka","spectra_W"],
+
+    "sigma_meas": {"spectra_X":0.35, "spectra_Ka":0.35, "spectra_W":0.35},
+    "swap": 1,
+    "update": 1,
+
+    "freeze_params_to_true": [],
+
+    "freeze_params": {},
+
+    "plot": 1,
+    "print_res": 1,
+    "mse_thres": 0.1
+
+    
+}
+
